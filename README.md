@@ -5,7 +5,8 @@ Individual Linux commands can be combined in the command line ant it is extremel
 
 # Basics
 
-
 ```bash
 test
 ```
+
+
