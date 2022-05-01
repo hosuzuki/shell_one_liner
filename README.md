@@ -5,9 +5,14 @@ Individual Linux commands can be combined in the command line ant it is extremel
 
 # Basics
 
+## pipe
+
+Example
 ```bash
-test
+$ echo '1+2' | bc
 ```
+The output is `3`.
 
+`$ echo '1+2'` will simply show `1+2`in the terminal. 
+The pipe `|` can use the output of command at the lefthand side as an input to the right.
 
-bash
