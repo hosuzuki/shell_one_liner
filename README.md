@@ -15,3 +15,11 @@ The output is `3`.
 `$ echo '1+2'` will simply show `1+2`in the terminal.<br>
 The pipe `|` can use the output of command at the lefthand side as an input to the right.
 
+## save to a file
+
+```bash
+$ echo '1+2' | bc > output.txt
+```
+The output `3` will be stored in the file called "output.txt".
+
+`>` is called redirect because it changes the direction of output from a terminal to a file.
