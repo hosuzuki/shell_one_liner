@@ -7,12 +7,11 @@ Individual Linux commands can be combined in the command line ant it is extremel
 
 ## pipe
 
-Example
 ```bash
 $ echo '1+2' | bc
 ```
 The output is `3`.
 
-`$ echo '1+2'` will simply show `1+2`in the terminal. 
+`$ echo '1+2'` will simply show `1+2`in the terminal.<br>
 The pipe `|` can use the output of command at the lefthand side as an input to the right.
 
