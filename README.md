@@ -24,8 +24,10 @@ The output `3` will be stored in the file called "output.txt".
 
 `>` is called redirect because it changes the direction of output from a terminal to a file.
 
-## seb
-
-
+## sed
+```bash
+echo this_is_an_apple | sed 's/an_apple/a_pen/'
+```
+The output will be `this_is_a_pen`.
 
 ## 
