@@ -8,7 +8,7 @@ Individual Linux commands can be combined in the command line ant it is extremel
 ## pipe
 
 ```bash
-$ echo '1+2' | bc
+echo '1+2' | bc
 ```
 The output is `3`.
 
@@ -18,7 +18,7 @@ The pipe `|` can use the output of command at the lefthand side as an input to t
 ## save the output to a file
 
 ```bash
-$ echo '1+2' | bc > output.txt
+echo '1+2' | bc > output.txt
 ```
 The output `3` will be stored in the file called "output.txt".
 
