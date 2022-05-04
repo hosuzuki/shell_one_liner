@@ -33,7 +33,7 @@ A regular expression is a pattern that matches strings or pieces of strings.
 | a(bc) |  parentheses create a capturing group with value bc |
 | a(?:bc)* | using ?: we disable the capturing group |
 | a(?\<foo\>bc)| using ?<foo> we put a name to the group |
-| [abc] | matches a string that has either an a or a b or a c -> is the same as a|b|c |
+| [abc] | matches a string that has either an a or a b or a c \-\> is the same as a\|b\|c |
 | [a-c] | same as previous |
 | [a-fA-F0-9] | a string that represents a single hexadecimal digit, case insensitively |
 | [0-9]%  | a string that has a character from 0 to 9 before a % sign |
