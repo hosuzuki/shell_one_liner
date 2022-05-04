@@ -12,7 +12,7 @@ A regular expression is a pattern that matches strings or pieces of strings.
 
 |regex|what to do|
 | --- | --- |
-| a | a |
+| ^ | ... |
 
 
 
