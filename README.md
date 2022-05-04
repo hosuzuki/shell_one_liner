@@ -32,7 +32,14 @@ The output will be `this_is_a_pen`.
 
 ## grep
 ```bash
-
+seq 100 | grep 0
 ```
-##
+
+`seq` command is used to generate numbers from FIRST to LAST in steps of INCREMENT.
+If the FIRST was not indicated, it starts from 1.
+
+`grep` is used to search text and strings in a given file or strings.
+In this case, grep command search the number which contain `0` from 1 to 100.
+
+## 
 
