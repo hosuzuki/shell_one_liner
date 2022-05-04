@@ -6,7 +6,14 @@ Individual Linux commands can be combined in the command line ant it is extremel
 # Basics
 
 
-## regular expression
+## regular expressions (a.k.a. regex, regexp, or r.e.)
+
+A regular expression is a pattern that matches strings or pieces of strings. 
+
+|regex|what to do|
+| --- | --- |
+| a | a |
+
 
 
 
