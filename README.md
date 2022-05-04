@@ -22,16 +22,17 @@ A regular expression is a pattern that matches strings or pieces of strings.
 | abc{2,5} | matches a string that has ab followed by 2 up to 5 c |
 | a(bc)* | matches a string that has a followed by zero or more copies of the sequence bc |
 | a(bc){2,5} | matches a string that has a followed by 2 up to 5 copies of the sequence bc |
-| a(b|c) | matches a string that has a followed by b or c (and captures b or c) |
+| a(b\|c) | matches a string that has a followed by b or c (and captures b or c) |
 | a[bc]  | same as previous, but without capturing b or c |
 | \d | matches a single character that is a digit |
 |\D |  matches a single non-digit character |
+|\\$\d  |  matches a string that has a $ before one digit|
 | \w | matches a word character (alphanumeric character plus underscore) |
 | \s | matches a whitespace character (includes tabs and line breaks) |
 | . |  matches any character |
 | a(bc) |  parentheses create a capturing group with value bc |
 | a(?:bc)* | using ?: we disable the capturing group |
-| a(?<foo>bc)| using ?<foo> we put a name to the group |
+| a(?\<foo\>bc)| using ?<foo> we put a name to the group |
 | [abc] | matches a string that has either an a or a b or a c -> is the same as a|b|c |
 | [a-c] | same as previous |
 | [a-fA-F0-9] | a string that represents a single hexadecimal digit, case insensitively |
@@ -43,7 +44,7 @@ A regular expression is a pattern that matches strings or pieces of strings.
 | \Babc\B |  matches only if the pattern is fully surrounded by word characters| 
 | ([abc])\1 |  using \1 it matches the same text that was matched by the first capturing group | 
 | ([abc])([de])\2\1 | we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) capturing group| 
-| (?<foo>[abc])\k<foo>| we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex | 
+| (?\<foo\>[abc])\k\<foo\>| we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex | 
 | d(?=r) | matches a d only if is followed by r, but r will not be part of the overall regex match| 
 | (?<=r)d |  matches a d only if is preceded by an r, but r will not be part of the overall regex match| 
 | d(?!r) | matches a d only if is not followed by r, but r will not be part of the overall regex match | 
