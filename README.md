@@ -88,7 +88,23 @@ If the FIRST was not indicated, it starts from 1.
 `grep` is used to search text and strings in a given file or strings.
 In this case, grep command search the number which contain `0` from 1 to 100.
 
-## 
+## awk
+  
+```bash
+seq 5 | awk 'BEGIN{a=0}$1%2==0{print $1, "Even"}$1%2==1{print $1, "Odd"}{a+=$1}END{print "sum",a}'
+ ```
+
+result
+```bash
+1 Odd
+2 Even
+3 Odd
+4 Even
+5 Odd
+sum 15
+```
+  
+
 
   
   
