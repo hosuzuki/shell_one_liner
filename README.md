@@ -103,8 +103,9 @@ result
 5 Odd
 sum 15
 ```
-  
 
+In an awk rule, either the pattern or the action can be omitted, but not both. If the pattern is omitted, then the action is performed for every input line. If the action is omitted, the default action is to print all lines that match the pattern.
+In this case, `$1%2==0` and `$1%2==1` are patterns.
 
   
   
