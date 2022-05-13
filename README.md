@@ -119,4 +119,7 @@ Even 2
 Odd 3
 ```
   
-  
+awk version (without using sort and uniq)
+```bash
+seq 5 | awk '{print $1%2 ? "Odd" : "Even"}' | awk '{a[$1]++}END{for(k in a)print k, a[k]}'
+```
