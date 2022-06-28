@@ -4,6 +4,7 @@ Individual Linux commands can be combined in the command line ant it is extremel
 
 
 
+
 # Basics
 
 ## regular expressions (a.k.a. regex, regexp, or r.e.)
